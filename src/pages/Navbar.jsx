@@ -21,17 +21,15 @@ function Navbar() {
     }
   };
 
+const manejarCerrarSesion = () => {
+  cerrarSesion();
+  vaciarCarrito();
 
-  const manejarCerrarSesion = () => {
-    cerrarMenu();
-    navigate("/productos");
+  cerrarMenu();
 
-    // Tiempo 1'' para asegurar la navegación
-    setTimeout(() => {
-      vaciarCarrito();
-      cerrarSesion();
-    }, 100);
-  };
+  navigate("/productos");
+};
+
 
   return (
     <>
@@ -89,7 +87,7 @@ function Navbar() {
                     <NavLinkAdmin to="/dashboard" className="nav-link" onClick={cerrarMenu}>Dashboard</NavLinkAdmin>
                   )}
 
-                  <BotonCerrarSesion onClick={manejarCerrarSesion} className="btn btn-outline-light btn-sm">
+                  <BotonCerrarSesion type="button" onClick={manejarCerrarSesion} className="btn btn-outline-light btn-sm">
                     Cerrar Sesión
                   </BotonCerrarSesion>
                 </ContenedorUsuario>
