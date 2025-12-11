@@ -7,7 +7,7 @@ function Inicio() {
   return (
     <HeroSection>
       <HeroImage>
-        <img src="../img/hero.jpg" alt="Plato de pasta" />
+        <img src="../img/hero.webp" alt="Plato de pasta" />
       </HeroImage>
 
       <HeroText>
