@@ -7,7 +7,7 @@ function Inicio() {
   return (
     <HeroSection>
       <HeroImage>
-        <img src="https://www.pastasramos.com.ar/themes/vox/assets/images/pasta.jpg" alt="Plato de pasta" />
+        <img src="../img/hero.jpg" alt="Plato de pasta" />
       </HeroImage>
 
       <HeroText>
