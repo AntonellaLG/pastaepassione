@@ -7,6 +7,33 @@
     <title>Tienda | Pasta e Passione</title>
     <meta name="description" content="Pasta e Passione es una tienda de pastas frescas artesanales, salsas caseras y productos gourmet italianos. Catálogo completo con ravioles, ñoquis y fideos, elaborados con tradición y calidad.">
     <meta name="author" content="Fiamma Antonella Lugo Gutiérrez">
+
+    <!-- OPTIMIZACIÓN DE FUENTES (mejora rendimiento móvil) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Preload para iniciar la descarga antes del render (mejora LCP) -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Herr+Von+Muellerhoff&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    />
+
+    <!-- Carga no bloqueante (máximo rendimiento) -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Herr+Von+Muellerhoff&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <!-- Fallback si JS está deshabilitado -->
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Herr+Von+Muellerhoff&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      />
+    </noscript>
   </head>
   <body>
     <div id="root"></div>
