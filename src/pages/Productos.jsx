@@ -186,6 +186,10 @@ const PageWrapper = styled.div`
   overflow-x: hidden;
   margin-bottom: 20px;
 
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: 0 15px;
+  }
+
   @media (max-width: ${breakpoints.mobile}) {
     padding: 0 10px;
   }
@@ -354,39 +358,40 @@ const BtnAdminContainer = styled.div`
   }
 `;
 
-const BtnEditar = styled.button`
+const BtnAdmin = `
   background-color: #fff8e6;
-  color: #17a2b8;
-  border: 1.5px solid #17a2b8;
   border-radius: 50px;
   padding: 6px 18px;
   margin: 5px;
   font-size: 0.9rem;
+  width: 130px;
   cursor: pointer;
   transition: 0.3s ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+`
+
+const BtnEditar = styled.button`
+  ${BtnAdmin};
+  color: #17a2b8;
+  border: 1.5px solid #17a2b8;
 
   &:hover {
     color: #0b7586ff;
     border-color: #0b7586ff;
-    transform: scale(1.03);
   }
 `;
 
 const BtnEliminar = styled.button`
-  background-color: #ffebee;
+  ${BtnAdmin};
   color: #c62828;
   border: 1.5px solid #c62828;
-  border-radius: 50px;
-  padding: 6px 18px;
-  margin: 5px;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: 0.3s ease;
 
   &:hover {
     color: #8e0000;
     border-color: #8e0000;
-    transform: scale(1.03);
   }
 `;
 

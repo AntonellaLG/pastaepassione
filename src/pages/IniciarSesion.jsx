@@ -192,6 +192,7 @@ const BotonSesion = styled.button`
   transition: 0.3s;
   cursor: pointer;
   margin: 8px 5px;
+  width: 170px;
 
   &:hover {
     color: #704214;
@@ -212,6 +213,7 @@ const BotonSesion = styled.button`
   @media (max-width: ${breakpoints.tablet}) {
     font-size: 14px;
     padding: 9px 20px;
+    width: 150px;
   }
 
   @media (max-width: ${breakpoints.mobile}) {

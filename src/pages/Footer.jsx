@@ -25,92 +25,63 @@ function Footer() {
 export default Footer;
 
 
-
 const FooterContainer = styled.footer`
-  background-color: #faf6f2;
-  color: #704214;
+  background-color: #2c2c2c;
+  color: #ffffff;
   text-align: center;
-  padding: 30px 20px;
+  padding: 35px 20px;
   font-family: 'Poppins', sans-serif;
-  border-top: 1px solid #e0d6cc;
+  border-top: 1px solid #444444;
 
   @media (max-width: ${breakpoints.tablet}) {
-    padding: 25px 15px;
+    padding: 28px 15px;
   }
 
   @media (max-width: ${breakpoints.mobile}) {
-    padding: 22px 12px;
+    padding: 25px 12px;
   }
 `;
 
 const FooterText = styled.p`
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 500;
-  margin-bottom: 6px;
-
-  @media (max-width: ${breakpoints.laptop}) {
-    font-size: 0.95rem;
-  }
+  margin-bottom: 8px;
 
   @media (max-width: ${breakpoints.tablet}) {
-    font-size: 0.9rem;
-  }
-
-  @media (max-width: ${breakpoints.mobile}) {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
   }
 `;
 
 const FooterSubtext = styled.p`
-  font-size: 0.85rem;
-  color: #a07d60;
-
-  @media (max-width: ${breakpoints.laptop}) {
-    font-size: 0.8rem;
-  }
+  font-size: 0.9rem;
+  color: #cfcfcf;
 
   @media (max-width: ${breakpoints.tablet}) {
-    font-size: 0.78rem;
-  }
-
-  @media (max-width: ${breakpoints.mobile}) {
-    font-size: 0.75rem;
+    font-size: 0.82rem;
   }
 `;
 
 const Divider = styled.hr`
-  margin: 15px auto;
+  margin: 18px auto;
   width: 60%;
   border: none;
-  border-top: 1px solid #e0d6cc;
+  border-top: 1px solid #444444;
 
   @media (max-width: ${breakpoints.tablet}) {
-    width: 70%;
-  }
-
-  @media (max-width: ${breakpoints.mobile}) {
-    width: 80%;
+    width: 75%;
   }
 `;
 
 const DeveloperText = styled.p`
-  font-size: 0.85rem;
-  margin-top: 10px;
-  color: #704214;
-
+  font-size: 0.9rem;
+  margin-top: 12px;
+  
   strong {
     font-weight: 600;
-  }
-
-  @media (max-width: ${breakpoints.laptop}) {
-    font-size: 0.8rem;
+    color: #e4c59e;
   }
 
   @media (max-width: ${breakpoints.tablet}) {
-    font-size: 0.78rem;
-  }
-
-  @media (max-width: ${breakpoints.mobile}) {
-    font-size: 0.75rem;
+    font-size: 0.82rem;
   }
 `;

@@ -131,7 +131,7 @@ const NavbarContainer = styled.nav`
 `;
 
 const CollapseMenu = styled.div`
-  @media (max-width: ${breakpoints.tablet}) {
+  @media (max-width: ${breakpoints.laptop}) {
     position: absolute;
     top: 50px;
     right: 0;
@@ -141,6 +141,8 @@ const CollapseMenu = styled.div`
     padding: 15px;
     border-radius: 8px 0 0 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    text-align: center;
+    
 
     /* importante: bootstrap fuerza width 100% */
     &.collapse.show {
@@ -165,10 +167,6 @@ const Logo = styled(Link)`
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
- 
-  &:hover {
-    color: #d2691e !important;
-  }
 
   @media (max-width: ${breakpoints.laptop}) {
     font-size: 1.3rem;
@@ -187,6 +185,7 @@ const NavLink = styled(Link)`
  
   &:hover {
     color: white !important;
+    border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.2);
   }
 
@@ -291,6 +290,7 @@ const NavLinkAdmin = styled(Link)`
  
   &:hover {
     color: orange !important;
+    border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.2);
   }
 `;

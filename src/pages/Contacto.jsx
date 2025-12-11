@@ -277,11 +277,14 @@ const Boton = styled.button`
 const Info = styled.div`
   display: flex;
   flex-direction: column;
+  text-align: left;
   justify-content: space-between;
   padding: 1rem 0;
+  height: 100%;
 
   @media (max-width: ${breakpoints.tablet}) {
     margin-top: 1.5rem;
+    text-align: center;
   }
 `;
 

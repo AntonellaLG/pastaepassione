@@ -53,7 +53,7 @@ export default function Pagar() {
                         <div className="d-flex justify-content-center align-items-center gap-2">
                           <button
                             onClick={() => quitarCantidad(producto.id)}
-                            className="btn btn-outline-secondary btn-sm"
+                            className="btn btn-outline-dark btn-sm"
                             style={{ width: "40px" }}
                           >
                             -
@@ -65,7 +65,7 @@ export default function Pagar() {
 
                           <button
                             onClick={() => agregarCantidad(producto.id)}
-                            className="btn btn-outline-secondary btn-sm"
+                            className="btn btn-outline-dark btn-sm"
                             style={{ width: "40px" }}
                           >
                             +
